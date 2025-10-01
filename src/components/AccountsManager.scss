@@ -1,0 +1,25 @@
+.accounts-list {
+  margin-top: 24px;
+}
+
+.accounts-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.headers-card {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+.header-label {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #374151;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

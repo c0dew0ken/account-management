@@ -1,0 +1,56 @@
+@use 'sass:meta';
+
+$font-family-base: system-ui, Avenir, Helvetica, Arial, sans-serif;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+@mixin transition($property: all, $duration: 0.3s, $timing: ease) {
+  transition: $property $duration $timing;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Базовые стили
+:root {
+  font-family: $font-family-base;
+  line-height: 1.5;
+  font-weight: $font-weight-normal;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+a {
+  font-weight: $font-weight-medium;
+  text-decoration: none;
+  @include transition(color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-bold;
+  line-height: 1.2;
+}
